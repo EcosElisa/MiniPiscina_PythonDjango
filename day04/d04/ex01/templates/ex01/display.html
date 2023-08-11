@@ -1,0 +1,57 @@
+{% extends 'ex01/base.html' %} {% load static %} {% block title %}
+<title>ex01: Display process of a static page.</title>
+{% endblock title %} {% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}" />
+{% endblock style %} {% block content %}
+
+<div class="content">
+  <h1>Displaying a Static Web Page in Django</h1>
+  <p>
+    In Django, the process of displaying a static web page involves several key
+    components: templates, views, and the request-response cycle. Let's break
+    down the steps from the request to the answer.
+  </p>
+
+  <h2>1. The Request-Response Cycle</h2>
+  <p>
+    When a user's browser sends a request for a specific URL, Django's server
+    receives the request. The server processes the request and determines which
+    view should handle it based on URL routing defined in the project's URLs
+    configuration.
+  </p>
+
+  <h2>2. The View Function</h2>
+  <p>
+    Views in Django are Python functions that handle the logic for a specific
+    URL. A view function receives the request as an input and returns an HTTP
+    response. This response could be a rendered template, JSON data, or any
+    other form of content.
+  </p>
+
+  <h2>3. Template Rendering</h2>
+  <p>
+    For static web pages, a common approach is to use Django templates. A
+    template is an HTML file with embedded template tags and variables. In the
+    view function, you can use the <code>render</code> function to combine data
+    from the backend with a template. The template engine processes the template
+    tags and variables, creating a final HTML page.
+  </p>
+
+  <h2>4. Sending the Response</h2>
+  <p>
+    Once the template is rendered, the view function returns an HTTP response
+    containing the HTML content. This response is sent back to the user's
+    browser. The browser then displays the static web page to the user based on
+    the received HTML and any associated assets (like stylesheets or images).
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    The process of displaying a static web page in Django involves the
+    interaction of the request-response cycle, view functions, and templates.
+    This architectural pattern allows developers to create dynamic and
+    interactive web pages by combining data from the backend with HTML
+    templates, which are then sent to users' browsers for rendering.
+  </p>
+</div>
+{% endblock content %}

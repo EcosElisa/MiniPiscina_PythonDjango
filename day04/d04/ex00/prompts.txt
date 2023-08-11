@@ -1,0 +1,1 @@
+#Fiz o uso do auto-complete do Copilot para facilitar a digitação

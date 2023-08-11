@@ -1,0 +1,15 @@
+* {
+  color: red;
+}
+
+body {
+  color: red;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}

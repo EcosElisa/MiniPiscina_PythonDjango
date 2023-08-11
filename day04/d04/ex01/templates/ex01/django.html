@@ -1,0 +1,50 @@
+{% extends 'ex01/base.html' %} {% load static %} {% block title %}
+<title>Ex01: Django, framework web</title>
+{% endblock title %} {% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}" />
+{% endblock style %} {% block content %}
+
+<div class="content">
+  <h1>Introduction to Django and Its History</h1>
+  <p>
+    Django is a powerful and popular open-source web framework built using
+    Python. It simplifies the process of creating web applications by providing
+    a robust set of tools and conventions. Let's take a quick look at the
+    history of Django.
+  </p>
+
+  <h2>The History of Django</h2>
+  <p>
+    Django was created by Adrian Holovaty and Simon Willison, developers at the
+    Lawrence Journal-World newspaper, in 2003. It was released as an open-source
+    project in July 2005. The name "Django" pays homage to the jazz guitarist
+    Django Reinhardt, reflecting the framework's focus on enabling developers to
+    create web applications quickly and efficiently.
+  </p>
+
+  <p>
+    One of Django's key features is its emphasis on the "Don't Repeat Yourself"
+    (DRY) principle. It aims to reduce redundancy in code and promote clean,
+    maintainable codebases. The framework provides built-in tools for tasks like
+    URL routing, database interaction, form handling, and template rendering.
+  </p>
+
+  <p>
+    Over the years, Django has evolved with regular releases, introducing new
+    features and improvements. It gained popularity due to its user-friendly
+    design, comprehensive documentation, and vibrant community. The Django
+    community contributes to the framework's growth by creating reusable
+    packages, extensions, and tools.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    Django has become a go-to choice for developers when building web
+    applications. Its history of innovation, commitment to best practices, and
+    focus on developer productivity have made it a cornerstone of modern web
+    development. By providing a solid foundation and a range of features, Django
+    continues to empower developers to create sophisticated and maintainable web
+    applications.
+  </p>
+</div>
+{% endblock %}

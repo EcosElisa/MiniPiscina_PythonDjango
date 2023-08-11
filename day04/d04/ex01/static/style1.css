@@ -1,0 +1,18 @@
+body {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.alinha_center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

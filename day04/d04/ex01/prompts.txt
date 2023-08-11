@@ -1,0 +1,6 @@
+#Create an HTML file with the following instructions:
+  1. Create a heading with "Django" title
+  2. Create a list of 5 topics you want to learn in Django
+  3. Create a tag with title "History of Django"
+  4. Create a tag with title "What is Django"
+  5. Create a tag with title "Why Django is used"

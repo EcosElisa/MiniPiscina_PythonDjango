@@ -1,0 +1,7 @@
+#Create an HTML file with the following instructions:
+  1. Create a heading with "Ex02 First form" title
+  2. Create a tag h1 with title "Form History"
+  3. Create a input field with label "History" and type text
+  4. Create a form with action "/submit" and method "POST"
+  5. Create a tag h3 with title "History"
+

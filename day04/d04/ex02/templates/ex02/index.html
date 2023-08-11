@@ -1,0 +1,16 @@
+{% extends 'ex02/base.html' %} {% load static %} {% block title %}
+<div class= "alinha">
+  <fieldset>
+  <title>Ex02 First form</title>
+  {% endblock title %} {% block style %} {% endblock style %} {% block content %}
+  <h1 style="color: brown;">Form History</h1>
+  <form action="" method="post">
+    {% csrf_token %} {{ form.as_table }}
+    <input type="submit" value="Submit" />
+  </form>
+  <h3>History:</h3>
+  {% for history in historys reversed %}
+  <p style="font-size: small;";>{{ history }}</p>
+  {% endfor %} {% endblock %}
+  </fieldset>
+</div>
