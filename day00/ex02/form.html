@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Informações de Contato</title>
+</head>
+<body>
+  <form>
+    <!-- Firstname: a text field -->
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="firstname" name="firstname" required><br>
+
+    <!-- Name: a text field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <!-- Age: a numeric field specific to HTML5 -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <!-- Phone: a tel field specific to HTML5 -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <!-- Email: an email field specific to HTML5 -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <!-- Student at 42?: a checkbox field -->
+    <label for="student">Student at 42?</label>
+    <input type="checkbox" id="student" name="student"><br>
+
+    <!-- Gender: radio buttons with values Male, Female, and Other -->
+    <label>Gender:</label>
+    <input type="radio" id="gender_male" name="gender" value="Male" required>
+    <label for="gender_male">Male</label>
+    <input type="radio" id="gender_female" name="gender" value="Female" required>
+    <label for="gender_female">Female</label>
+    <input type="radio" id="gender_other" name="gender" value="Other" required>
+    <label for="gender_other">Other</label><br>
+
+    <!-- Form submission button with onclick attribute -->
+    <input type="button" value="Enviar" onclick="displayFormContents()">
+  </form>
+
+  <script src="./popup.js"></script>
+</body>
+</html>
